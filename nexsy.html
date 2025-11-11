@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexsy Foundation | Next Generation. One Synergy.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-gold: #D4AF37; 
+            --color-white: #ffffff;
+            --color-dark: #1f2937; 
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-white);
+        }
+        .text-gold { color: var(--color-gold); }
+        .bg-gold { background-color: var(--color-gold); }
+        .border-gold { border-color: var(--color-gold); }
+        .logo-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+        .scale-in.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .gold-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: var(--color-gold);
+            color: var(--color-white);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-gold {
+            background-color: var(--color-gold);
+            color: var(--color-white);
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: #C2A028;
+        }
+
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="logo">
+    <img src="nexsy foundation.jpg" 
+         alt="Nexsy Foundation Logo" 
+         class="h-12 w-auto">
+        </a>
+
+            
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-sm font-medium text-gray-600 hover:text-gold transition duration-150">About</a>
+                <a href="#mission-vision" class="text-sm font-medium text-gray-600 hover:text-gold transition duration-150">M/V</a>
+                <a href="#programs" class="text-sm font-medium text-gray-600 hover:text-gold transition duration-150">Programs</a>
+                <a href="#success" class="text-sm font-medium text-gray-600 hover:text-gold transition duration-150">Success Stories</a>
+                <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-gold transition duration-150">Contact</a>
+            </div>
+            <a href="#" class="hidden md:block bg-gold hover:bg-opacity-90 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                Donate Now
+            </a>
+            <button class="md:hidden text-gray-800 hover:text-gold focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-gray-50 py-20 sm:py-32 lg:py-40">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in-up">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900 mb-6">
+                    Nexsy Foundation
+                </h1>
+                <p class="text-2xl font-light text-gold mb-8">
+                    "Next Generation. One Synergy."
+                </p>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                    Nexsy stands for Next Generation Synergy — young people coming together to create collective impact. It’s about connection, collaboration, and action: youth joining forces to solve social problems and shape Ghana’s next chapter.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#mission-vision" class="bg-gold hover:bg-opacity-80 text-white font-semibold py-3 px-8 rounded-lg shadow-xl transition duration-300 text-lg">
+                        Learn Our Story
+                    </a>
+                    <a href="#contact" class="text-gold border border-gold hover:bg-gold hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-lg">
+                        Get Involved
+                    </a>
+                </div>
+            </div>
+
+            <div class="d:w-1/2 flex justify-center scale-in delay-200">
+                <div class="w-full max-w-sm bg-white rounded-xl shadow-2xl flex items-center justify-center p-8 border border-gold border-opacity-30">
+                    <img src="nexsy foundation.jpg" 
+                    alt="Nexsy Foundation">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 lg:py-32 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl fade-in-up">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+                We are the next. Together, we are Nexsy.
+            </h2>
+            <p class="text-xl text-gray-600 mx-auto">
+                Nexsy stands for Next Generation Synergy — young people coming together to create collective impact.
+                It’s about connection, collaboration, and action: youth joining forces to solve social problems and shape Ghana’s next chapter. We are the next. Together, we are Nexsy.
+            </p>
+        </div>
+    </section>
+
+    <section id="mission-vision" class="py-20 lg:py-32 bg-gray-50 border-t border-b border-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+            <div class="flex flex-col md:flex-row items-center section-item fade-in-up">
+                <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0">
+                    <div class="gold-icon mb-4 mx-auto md:mx-0">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">
+                        Our Mission Statement
+                    </h3>
+                    <p class="text-lg text-gray-600">
+                        Nexsy is a youth-led foundation uniting young Ghanaians to address social challenges through innovation, collaboration, and community action, building synergy among the next generation to lead, create, and transform their future.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center scale-in delay-200">
+                    <div class="w-full max-w-md h-64 bg-gray-200 rounded-xl shadow-lg flex items-center justify-center p-6">
+                        <svg class="w-16 h-16 text-gold opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2c4.148 0 7.857 2.213 9.77 5.5.952 1.62-.257 3.63-2.097 4.54a7 7 0 10-10.74 8.76l2.76 2.76A10.003 10.003 0 0112 22a9.96 9.96 0 01-7.07-2.93L.23 15.5c-1.84-1.62-.84-3.63 1.097-4.54A11.955 11.955 0 0112 2z"></path></svg>
+                        <span class="absolute text-md font-semibold text-gray-600">Innovation & Action</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center section-item fade-in-up">
+                <div class="md:w-1/2 md:pl-16 mb-8 md:mb-0 text-left md:text-right">
+                    <div class="gold-icon mb-4 mx-auto md:ml-auto md:mr-0">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">
+                        Our Vision
+                    </h3>
+                    <p class="text-lg text-gray-600">
+                        To create a Ghana where empowered youth lead positive change and shape a thriving, united future.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center scale-in delay-200">
+                    <div class="w-full max-w-md h-64 bg-gray-200 rounded-xl shadow-lg flex items-center justify-center p-6">
+                        <svg class="w-16 h-16 text-gold opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292V21m0-10.354A4 4 0 1115 11.5v-10h-3zM12 21a2 2 0 01-2-2v-4a2 2 0 012-2h4a2 2 0 012 2v4a2 2 0 01-2 2h-4z"></path></svg>
+                        <span class="absolute text-md font-semibold text-gray-600">Thriving Future</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="programs" class="py-20 lg:py-32 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <header class="text-center max-w-2xl mx-auto mb-16 fade-in-up">
+                <span class="text-sm font-semibold uppercase tracking-widest text-gold">Our Impact</span>
+                <h2 class="text-4xl font-extrabold text-gray-900 mt-2">Core Programs for Change</h2>
+                <p class="text-lg text-gray-600 mt-4">We empower youth across Ghana through strategic pillars focused on growth, community, and leadership.</p>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center border-t-4 border-gold fade-in-up delay-100">
+                    <div class="gold-icon mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-3m0 0v5h-3m3 0l-4-4m-7-5a7 7 0 100-14 7 7 0 000 14zM10 7v3a2 2 0 002 2h3m2-7H7m11 0a2 2 0 100-4 2 2 0 000 4zM4 20h5v-3m0 0v5H4m-3 0l4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Synergy Leadership Academy</h3>
+                    <p class="text-gray-600">A structured program focused on developing critical thinking, governance, and ethical leadership skills for future Ghanaian leaders.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center border-t-4 border-gold fade-in-up delay-200">
+                    <div class="gold-icon mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-6.75-3H9v2h6v-2h-3v-4h3V6h-6v4h-3v2h3v4h-3.25zM12 4a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation Hubs & Grants</h3>
+                    <p class="text-gray-600">Providing resources, mentorship, and seed funding for youth-led social enterprises and technological solutions to local problems.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center border-t-4 border-gold fade-in-up delay-300">
+                    <div class="gold-icon mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8H7m10 0a2 2 0 100-4 2 2 0 000 4zM7 8a2 2 0 11-4 0 2 2 0 014 0zM7 8V3m10 5V3m0 0V20m0-5h5m-5 0H7m0 0a2 2 0 100 4 2 2 0 000-4zM17 15a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Community Synergy Projects</h3>
+                    <p class="text-gray-600">Mobilizing youth volunteers for targeted, collaborative community projects in education, health, and environmental sustainability.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 fade-in-up delay-400">
+                <a href="#contact" class="btn-gold shadow-lg hover:shadow-xl transition duration-300">
+                    See Our Full Program Calendar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="success" class="py-20 lg:py-32 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <header class="text-center max-w-2xl mx-auto mb-16 fade-in-up">
+                <span class="text-sm font-semibold uppercase tracking-widest text-gold">Impact in Action</span>
+                <h2 class="text-4xl font-extrabold text-gray-900 mt-2">Youth Success Stories</h2>
+                <p class="text-lg text-gray-600 mt-4">Real transformations made possible by the commitment and synergy of our participants.</p>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-xl p-6 border-l-4 border-gold fade-in-up delay-100">
+                    <p class="text-lg italic text-gray-700 mb-6">"The Synergy Leadership Academy didn't just teach me how to lead—it showed me how to solve complex issues in my community effectively. My career trajectory completely changed."</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4 bg-gray-200 border-2 border-gold" src="https://placehold.co/50x50/f9f9f9/6b7280?text=JD" alt="Testimonial photo">
+                        <div>
+                            <p class="font-bold text-gray-900">Joseph Doe</p>
+                            <p class="text-sm text-gold">2024 Leadership Fellow</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl p-6 border-l-4 border-gold fade-in-up delay-200">
+                    <p class="text-lg italic text-gray-700 mb-6">"With the Innovation Grant, my team developed a clean water solution now servicing 500+ households. Nexsy provided the mentorship and resources we needed to scale."</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4 bg-gray-200 border-2 border-gold" src="https://placehold.co/50x50/f9f9f9/6b7280?text=GD" alt="Testimonial photo">
+                        <div>
+                            <p class="font-bold text-gray-900">Gideon Damashie</p>
+                            <p class="text-sm text-gold">Grant Recipient, Tech Innovation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl p-6 border-l-4 border-gold fade-in-up delay-300">
+                    <p class="text-lg italic text-gray-700 mb-6">"Volunteering with the Synergy Projects connected me with dedicated young people across different fields. That collective energy is truly transforming our corner of Ghana."</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4 bg-gray-200 border-2 border-gold" src="https://placehold.co/50x50/f9f9f9/6b7280?text=TA" alt="Testimonial photo">
+                        <div>
+                            <p class="font-bold text-gray-900">Theophilus Andoh</p>
+                            <p class="text-sm text-gold">Community Volunteer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 fade-in-up delay-400">
+                <a href="#contact" class="text-gold border border-gold hover:bg-gold hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-lg">
+                    Read More Testimonials
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-16" id="contact">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h4 class="text-xl font-bold mb-4 text-gold">Ready to create synergy?</h4>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Join the Next Generation Synergy. Let's connect, collaborate, and act together to shape Ghana's future.</p>
+            <a href="#" class="bg-gold hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 text-lg inline-block">
+                Contact Us Today
+            </a>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-sm text-gray-500">&copy; <span id="current-year"></span> Nexsy Foundation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        
+                    } else {
+                        
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up, .scale-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            const logoImageUrl = 'nexsy foundation.jpg';
+            const navbarLogo = document.querySelector('.h-8.md\\:h-10 img');
+            if (navbarLogo) {
+                navbarLogo.src = logoImageUrl;
+                navbarLogo.removeAttribute('onerror');
+            }
+            const heroLogo = document.querySelector('.md\\:w-1\\/2.flex.justify-center.scale-in.delay-200 img');
+            if (heroLogo) {
+                heroLogo.src = logoImageUrl;
+                heroLogo.removeAttribute('onerror');
+            }
+        });
+    </script>
+</body>
+</html>
